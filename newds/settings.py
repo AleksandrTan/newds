@@ -131,5 +131,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
-
 ADMIN_CMS_PANEL_URL = 'dspanel/'
+LOGIN_URL = '/login/'
+LOGOUT_URL = '/logout/'
