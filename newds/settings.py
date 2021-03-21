@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'newds.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 POSTGRES_HOST = os.getenv('POSTGRES_HOST', 'localhost')
-POSTGRES_DB = os.getenv('POSSTGRES_DB', 'dsstorage')
+POSTGRES_DB = os.getenv('POSTGRES_DB', 'dsstorage')
 POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD', '1234567')
 POSTGRES_USER = os.getenv('POSTGRES_USER', 'postgres')
 DATABASES = {
