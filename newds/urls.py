@@ -14,8 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
+from newds.settings import ADMIN_CMS_PANEL_URL
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(ADMIN_CMS_PANEL_URL, include('dsadmin.urls'))
 ]

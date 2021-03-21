@@ -1,0 +1,12 @@
+from django.urls import path, include
+from django.contrib.auth import views as auth_views
+
+from dsadmin.views.startpage import MainView
+
+# ======================================= Main urls ==================================================================
+
+urlpatterns = [
+    path('login/', auth_views.LoginView.as_view(), name='loginadmin'),
+    path('logoutadmin/', auth_views.LogoutView.as_view(), name='logoutadmin'),
+    path('', MainView.as_view(), name='homeadmin'),
+]
